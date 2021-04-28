@@ -2,7 +2,7 @@ package de.neuefische.studendb.model;
 
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
 
     private String name;
     private String id;
@@ -41,11 +41,4 @@ public class Student {
         return Objects.hash(name, id);
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                '}';
-    }
 }
